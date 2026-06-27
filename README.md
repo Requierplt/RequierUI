@@ -1,73 +1,83 @@
-![Platform](https://img.shields.io/badge/Platform-Windows-blue)
-![Framework](https://img.shields.io/badge/.NET-7-purple)
-![WPF](https://img.shields.io/badge/UI-WPF-red)
-![Status](https://img.shields.io/badge/Status-Public%20Preview-orange)
-![License](https://img.shields.io/badge/License-Proprietary-darkred)
+<p align="center">
+  <img src="assets/logo.png" width="180">
+</p>
 
-# RequierUI
+<h1 align="center">RequierUI</h1>
 
-**Демонстрационный пользовательский интерфейс Requier EDR.**
+<p align="center">
+  Demonstration user interface for Requier EDR
+</p>
 
-RequierUI — публичная демонстрационная версия графического интерфейса системы **Requier EDR**, разработанной в составе **Requier Platform**.
-
-Репозиторий предназначен исключительно для ознакомления с пользовательским интерфейсом, архитектурой окон и визуальным стилем проекта.
-
----
-
-## О проекте
-
-Requier EDR — поведенческая система обнаружения и реагирования на угрозы (Endpoint Detection & Response), ориентированная на мониторинг, анализ и защиту конечных устройств.
-
-Данный репозиторий **не является полной версией продукта** и содержит только пользовательский интерфейс.
-
-Все внутренние компоненты платформы, отвечающие за обнаружение, анализ и реагирование на угрозы, в состав репозитория не входят.
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Requier%20Platform-black?style=for-the-badge">
+  <img src="https://img.shields.io/badge/.NET-7.0-512BD4?style=for-the-badge">
+  <img src="https://img.shields.io/badge/UI-WPF-8B0000?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Status-Public%20Preview-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge">
+</p>
 
 ---
 
-## Что входит в репозиторий
+**RequierUI** is a public demonstration version of the graphical interface for **Requier EDR**, developed as part of **Requier Platform**.
 
--   Графический интерфейс Requier EDR
--   WPF-разметка окон
--   Пользовательские элементы управления
--   Темы оформления
--   Иконки и визуальные ресурсы
--   Демонстрационная структура приложения
+This repository is intended solely for reviewing the user interface, window architecture, and visual style of the project.
 
 ---
 
-## Возможности интерфейса
+## About
 
-### Панель управления
+Requier EDR is a behavioral endpoint detection and response system focused on monitoring, analysis, and protection of endpoint devices.
 
--   выбор протокола защиты (Safe / Auto / Mania / Slayer);
--   аварийная блокировка (LockDown);
--   мониторинг состояния защиты.
+This repository **is not the full product** and contains only the user interface.
 
-### Сканирование
+All internal platform components responsible for threat detection, analysis, and response are not included.
 
--   интерфейс глубокого сканирования;
--   отображение прогресса;
--   журнал выполнения операций.
+---
 
-### Исследование угроз
+## What's Included
 
--   Drag & Drop бинарных файлов;
--   интерфейс анализа объектов;
--   подготовка к реверс-инжинирингу.
+-   Requier EDR Graphical Interface
+-   WPF Window Markup
+-   Custom User Controls
+-   Design Themes
+-   Icons and Visual Resources
+-   Demo Application Structure
 
-### Диспетчер процессов
+---
 
--   просмотр процессов;
--   интерфейс завершения и приостановки процессов;
--   создание дампов памяти.
+## Features
 
-### Мониторинг системы
+### Dashboard
 
--   сетевые подключения;
--   интерфейс анализа портов;
--   монитор активности системы.
+-   Protection protocol selector (Safe / Auto / Mania / Slayer)
+-   Emergency LockDown
+-   Protection status monitoring
 
-### Дополнительные разделы
+### Scanning
+
+-   Deep scan interface
+-   Progress display
+-   Operation log
+
+### Threat Research
+
+-   Drag & Drop binary files
+-   Object analysis interface
+-   Reverse engineering preparation
+
+### Process Manager
+
+-   Process overview
+-   Kill, suspend, and resume processes
+-   Memory dump creation
+
+### System Monitor
+
+-   Network connections
+-   Port analysis interface
+-   System activity monitor
+
+### Additional Sections
 
 -   YARA Scanner
 -   Quarantine
@@ -81,19 +91,19 @@ Requier EDR — поведенческая система обнаружения
 
 ---
 
-## Технологии
+## Technologies
 
--   .NET 7
+-   .NET 7.0
 -   WPF
 -   XAML
 -   C# C++ C
--   Полностью кастомный пользовательский интерфейс
--   Тёмная тема оформления
--   Шрифт Consolas
+-   Fully custom user interface
+-   Dark theme
+-   Consolas font
 
 ---
 
-## Структура проекта
+## Project Structure
 
 ```
 RequierUI/
@@ -108,11 +118,11 @@ RequierUI/
 
 ---
 
-## Сборка
+## Build
 
 dotnet build -c Release
 
-Исполняемый файл:
+Executable:
 
 ```
 bin/Release/net7.0-windows/RequierUI.exe
@@ -120,34 +130,35 @@ bin/Release/net7.0-windows/RequierUI.exe
 
 ---
 
-## Ограничения
+## Limitations
 
-Репозиторий содержит **исключительно пользовательский интерфейс**.
+This repository contains **the user interface only**.
 
-Следующие компоненты **не входят** в состав публичной версии:
+The following components are **not included**:
 
--   движки обнаружения;
--   поведенческий анализ;
--   внутренние сервисы;
--   протоколы реагирования;
--   драйверные компоненты;
--   механизмы самозащиты;
--   сетевые компоненты;
--   внутренние API;
--   иные проприетарные технологии Requier Platform.
+-   Detection engines
+-   Behavioral analysis
+-   Internal services
+-   Response protocols
+-   Driver components
+-   Self-defense mechanisms
+-   Network components
+-   Internal APIs
+-   Other proprietary Requier Platform technologies
 
-По этой причине часть элементов интерфейса может быть недоступна или работать в демонстрационном режиме.
-
----
-
-## Лицензия
-
-Исходный код интерфейса распространяется исключительно в ознакомительных целях.
-
-Все технологии Requier Platform, связанные с обнаружением угроз, поведенческим анализом и реагированием, являются проприетарными и не распространяются в составе данного репозитория.
+Some interface elements may be unavailable or run in demo mode.
 
 ---
 
-**Requier Platform**
+## License
 
-**Security should be required. 🛡️**
+The interface source code is distributed for informational purposes only.
+
+All Requier Platform technologies related to threat detection, behavioral analysis, and response are proprietary and not distributed as part of this repository.
+
+---
+
+<p align="center">
+  <b>Requier Platform</b><br>
+  <i>Security should be required. 🛡️</i>
+</p>
