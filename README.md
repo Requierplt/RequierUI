@@ -1,3 +1,9 @@
+![Platform](https://img.shields.io/badge/Platform-Windows-blue)
+![Framework](https://img.shields.io/badge/.NET-7-purple)
+![WPF](https://img.shields.io/badge/UI-WPF-red)
+![Status](https://img.shields.io/badge/Status-Public%20Preview-orange)
+![License](https://img.shields.io/badge/License-Proprietary-darkred)
+
 # RequierUI
 
 **Демонстрационный пользовательский интерфейс Requier EDR.**
